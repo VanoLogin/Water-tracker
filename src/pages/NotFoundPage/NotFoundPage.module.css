@@ -1,0 +1,23 @@
+.container {
+    text-align: center;
+}
+
+.background {
+    height: 100vh;
+    background-image: url(../../assets/img/mobile/MainPageBG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: padding-box;
+}
+
+@media screen and (min-width: 768px) {
+    .background {
+        background-image: url(../../assets/img/tab/MainPageBG.png);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .background {
+        background-image: url(../../assets/img/desc/MainPageBG.png);
+    }
+}

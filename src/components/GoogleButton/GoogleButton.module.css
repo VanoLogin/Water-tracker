@@ -1,0 +1,23 @@
+.google_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 100%;
+    gap: 8px;
+    padding: 10px 30px;
+    height: 44px;
+    background: linear-gradient(135deg, #323f47, #486f97, #32678a, #5f5291);
+    background-size: 300% auto;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: var(--transition-duration) var(--transition-timing-function);
+    transition-duration: 900ms;
+}
+
+.google_button:hover {
+    background-position: 100% 0;
+}

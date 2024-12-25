@@ -1,0 +1,85 @@
+@mixin desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin background-image($image) {
+  background: {
+    image: $image;
+    repeat: no-repeat;
+    size: cover;
+  }
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin main-btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  color: $primary-color-white;
+  background-color: $primary-color-blue;
+  padding: 10px 30px;
+  box-shadow: $button-shadow;
+  transition: 0.5s;
+  cursor: pointer;
+  &:hover {
+    box-shadow: $button-shadow-hover;
+  }
+  &:active {
+    box-shadow: none;
+  }
+}
+
+@mixin base-input {
+  border: 1px solid $secondary-color-lightblue;
+  border-radius: 6px;
+  padding: 12px 10px;
+  width: 100%;
+  color: $primary-color-blue;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: $secondary-color-blue;
+  }
+}
+
+@mixin base-input-error {
+  border: 1px solid $secondary-color-red;
+  &::placeholder,
+  & {
+    color: $secondary-color-red;
+  }
+}
+
+@mixin overlay {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  transition: 0.5s;
+  @include flex-center;
+
+
+}

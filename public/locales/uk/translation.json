@@ -1,0 +1,16 @@
+{
+  "pages": {
+    "registration": {
+      "signInTitle": "Увійти",
+      "signUpTitle": "Зареєструватись",
+      "form": {
+        "emailLabel": "Введіть свій Email",
+        "emailPlaceholder": "E-mail",
+        "passwordLabel": "Введіть свій пароль",
+        "passwordPlaceholder": "Пароль",
+        "repeatPasswordLabel": "Повторіть пароль",
+        "repeatPasswordPlaceholder": "Повторіть пароль"
+      }
+    }
+  }
+}

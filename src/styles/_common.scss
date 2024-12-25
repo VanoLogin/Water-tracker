@@ -1,0 +1,21 @@
+@import "./variables";
+@import "./mixin";
+
+body {
+  font-family: $mainFont;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}

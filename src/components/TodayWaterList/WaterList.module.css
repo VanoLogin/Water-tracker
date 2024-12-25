@@ -1,0 +1,5 @@
+.list {
+    max-height: 183px;
+    height: 100%;
+    overflow: auto;
+}

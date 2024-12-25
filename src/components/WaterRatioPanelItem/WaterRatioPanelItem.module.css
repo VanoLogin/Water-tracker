@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-height: 180px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    padding: 0px 8px;
+}
+
+::-webkit-scrollbar {
+    height: 100%;
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #D7E3FF;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9EBBFF;
+    border-radius: 8px;
+    border: 1px solid #9EBBFF;
+}
+
+.operationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 0px;
+    border-bottom: 1px solid lightblue;
+}
+
+.amountInfoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.amountInfo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #407BFF;
+}
+
+.timeInfo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: black;
+    
+}
+
+.iconsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    align-items: center;
+}
+
+.iconsButton {
+    width: max-content;
+    padding: 0;
+    background-color: #ECF2FF;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.iconsButton:hover,
+.iconsButton:focus {
+    border: 1px solid transparent;
+    background-color: #ECF2FF;
+}
+
+.notebook {
+    fill: transparent;
+    stroke: #9EBBFF;
+    width: 16px;
+    height: 16px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+}
+
+.notebook:hover {
+    color:#9EBBFF;
+    border-bottom: 1px solid #9EBBFF;
+}
+
+.trashbox {
+    fill: transparent;
+    stroke: #EF5050;
+    width: 16px;
+    height: 16px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+}
+
+.trashbox:hover {
+    color: #EF5050;
+    border-bottom: 1px solid #EF5050;
+}
+
+@media screen and (max-width: 767px) {
+    .iconWaterGlass {
+        width: 26px;
+        height: 26px;
+    }
+
+}

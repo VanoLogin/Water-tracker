@@ -1,0 +1,58 @@
+.waterDailyContainer {
+
+    width: 164px;
+    height: 76px;
+    top: 112px;
+    left: 112px;
+    padding-left:  20px ;
+    padding-top: 8px;
+
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: 0px 4px 8px 0px #9ebbff1f;
+    border: 1px solid #ecf2ff;
+    background-color: #ffffff;
+}
+
+.waterDailyTitle {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #407bff;
+    margin: 0px;
+}
+
+.waterDailyText {
+    display: block;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #2f2f2f;
+    /* margin: 0px; */
+}
+
+.editbutton {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: right;
+    color: #8BAEFF;
+    background-color: #ffffff;
+    border: 0px;
+
+    padding: 0;
+
+}
+
+.dailyNormaContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: baseline;
+    margin-top: 12px;
+}

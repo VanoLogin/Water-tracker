@@ -1,0 +1,68 @@
+.section {
+    background-image: url(../../assets/img/mobile/SignInBG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 30px;
+    padding: 4px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 66px;
+}
+
+.bottle {
+    background-image: url(../../assets/img/mobile/SignInBottle.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 210px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.23;
+}
+
+.block {
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.redirektLink {
+    margin-top: 16px;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #407bff;
+}
+
+@media screen and (min-width:768px) {
+    .section {
+        background-image: url(../../assets/img/tab/SignInBottle.png);
+        background-position: bottom;
+        min-height: 590px;
+        padding: 16px 32px;
+    }
+
+    .bottle {
+        display: none;
+    }
+
+    .block {
+        width: max-content;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .section {
+        background-image: url(../../assets/img/desc/SignInBottle.png), url(../../assets/img/desc/MainPageBubbleBG.png);
+        background-size: contain;
+        background-position: left;
+        flex-direction: row;
+        justify-content: end;
+        padding: 113px 214px;
+    }
+}

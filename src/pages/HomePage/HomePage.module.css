@@ -1,0 +1,78 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-image: url(../../assets/img/mobile/HomePageBG@2x.png);
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 8px 20px 20px;
+}
+
+.bottleBG {
+    background-image: url(/src/assets/img/mobile/HomePageBottle@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 290px;
+    background-position: bottom;
+}
+
+.calendarWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 8px;
+    background-color: #ECF2FF;
+    box-shadow: 2px 2px 8px 2px rgba(46, 47, 66, 0.08);
+    border-radius: 10px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+            max-width: 768px;
+            background-image: url(../../assets/img/tab/HomePageBG@2x.png);
+            background-repeat: repeat;
+            background-size: cover;
+                    padding: 16px 32px;
+        }
+    .bottleBG {
+        background-image: url(/src/assets/img/tab/HomePageBottle@2x.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 386px;
+    }
+
+    .calendarWrapper {
+        padding: 32px 24px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+            max-width: 1440px;
+            background-image: url(../../assets/img/desc/MainPageBubbleBG.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-origin: padding-box;
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+            padding: 0px 112px 40px;
+        }
+    
+        .calendarBox {
+            max-width: 592px;
+            width: 100%;
+        }
+
+        .bottleBG {
+        background-image: url(/src/assets/img/desc/HomePageBottle@2x.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 548px;
+    }
+}

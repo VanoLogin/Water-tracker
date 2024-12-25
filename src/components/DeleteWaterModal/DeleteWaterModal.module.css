@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 592px;
+}
+
+.div {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 24px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .buttonContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 24px;
+  }
+  .div {
+    flex-direction: row;
+    justify-content: right;
+  }
+}
+@media screen and (max-width: 766px) {
+  .buttonContainer {
+    flex-direction: column;
+    display: flex;
+    gap: 24px;
+  }
+}
+.modal {
+  background-color: red !important ;
+}

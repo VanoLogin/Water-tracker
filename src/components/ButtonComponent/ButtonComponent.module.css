@@ -1,0 +1,17 @@
+.button {
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  border-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    max-width: 160px;
+    width: 100%;
+  }
+}

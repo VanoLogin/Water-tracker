@@ -1,0 +1,320 @@
+.modal {
+  max-height: 80vh;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 320px;
+  width: 100%;
+  min-height: 200px;
+}
+
+
+.label {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  /* margin-bottom: 8px; */
+  margin-top: 8px;
+}
+
+.formGroup input[name='email'] {
+  margin-bottom: 24px;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalHeader h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.svg {
+  fill: none;
+}
+
+.formGroup .error {
+  border-color: red;
+}
+
+.formGroup input[name='userName'],
+.formGroup input[name='currentPassword'],
+.formGroup input[name='newPassword'] {
+  margin-bottom: 24px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input::placeholder {
+  color: #9ebbff;
+}
+
+.photoUploadBox {
+  padding: 8px 0 24px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.outdatedPassword {
+  margin-bottom: 8px;
+}
+
+.avatarPlaceholder {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+}
+
+.gender {
+  display: flex;
+  gap: 30px;
+}
+
+.inputWrap {
+  position: relative;
+}
+
+.input {
+  border-radius: 4px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #d7e3ff;
+  color: gray;
+  width: 100%;
+  color: #407bff;
+  margin-top: 8px;
+}
+
+.saveBtn {
+  border: none;
+  background-color: #407bff;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.saveBtn:hover {
+  box-shadow: 0 4px 14px 0 rgba(64, 123, 255, 0.2);
+}
+
+.contBtn {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.uploadButton {
+  width: 134px;
+  height: 18px;
+  color: #407bff;
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin: 7px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.uploadBtnGroup {
+  display: flex;
+  align-items: center;
+}
+
+.buttonSvg {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 16px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  position: absolute;
+}
+
+.inputError {
+  border: 2px solid red;
+  color: red;
+}
+.passText {
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.labelPhoto {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.labelGender {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.radioGroup {
+  padding-right: 24px;
+}
+
+.YourName {
+  font-weight: bold;
+}
+
+.errorMessage {
+  margin-bottom: 50px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .input {
+    margin-bottom: 12px;
+    margin-top: 8px;
+  }
+
+  .photoSection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    margin-top: 8px;
+  }
+  .radioGroup {
+    margin-bottom: 24px;
+    margin-top: 12px;
+  }
+  .labelInput {
+    margin-right: 24px;
+    margin-top: 54px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .modal {
+    max-width: 704px;
+  }
+  .input {
+    margin-bottom: 12px;
+    margin-top: 8px;
+    width: 392px;
+  }
+
+  .photoSection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    margin-top: 8px;
+  }
+  .radioGroup {
+    margin-bottom: 24px;
+    margin-top: 12px;
+  }
+  .labelInput {
+    margin-right: 24px;
+    margin-top: 54px;
+  }
+
+  .buttonContainer {
+    max-width: 160px;
+    float: right;
+  }
+  .settingContainer {
+    display: table-caption;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .settingContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 24px; 
+
+    min-width: 1008px;
+    margin-bottom: 24px;
+    align-items: end;
+  }
+  .photoSection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    margin-top: 8px;
+    justify-content: flex-start;
+  }
+ 
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .photoSection {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .radioGroup {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .inputWrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .input {
+    flex: 1;
+    padding-right: 40px;
+  }
+
+  .buttonSvg {
+    position: absolute;
+    right: 8px;
+    top: 59%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+  }
+
+  .buttonContainer {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
